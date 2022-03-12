@@ -1,4 +1,4 @@
-# Laboratory work N*1
+# Laboratory work 1
 ## Tasks
 1. Firstly, I downloaded library of *boost* from `https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz` using **wget**.
 2. Then by `tar -xvf` I unarchived file to directory `~/boost_1_69_0`.
