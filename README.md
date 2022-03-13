@@ -17,9 +17,10 @@
    - If we want to find full path to file in only this directory we need use `realpath`. 
 ![Img 7](images/Task6_2.png)
 7. Using `grep -rl "boost::asio" ~/boost_1_69_0/boost` we output to consol all files that contain sequence **boost::asio**.
-8. I used `./bootstrap.sh --prefix=boost-libs`, created `./boost-libs` in `~/boost_1_69_0`. Then I used `.b2 install` to compile *boost*.
-9. To output all file and their sizes in this directory we can use `tree -h` or `ls -Rlh`.
-10. - Firstly, I used `du -ahS | sort -rh | head -5`, but then I understood that `-S` do not count sizes of subdirectories but it do not ban output of  directories.
+8. I used `./bootstrap.sh --prefix=boost_compiled`, created `./boost_compiled` in `~/boost_1_69_0`. Then I used `./b2 install` to compile *boost*.
+9. Created new dir `home/boost-libs` and used command `mv * ~/boost-libs` in this directory.
+10. To output all file and their sizes in this directory we can use `tree -h` or `ls -Rlh`.
+11. - Firstly, I used `du -ahS | sort -rh | head -5`, but then I understood that `-S` do not count sizes of subdirectories but it do not ban output of  directories.
 ![Img 8](images/Task11_1.png)
     - So, I decided to use `find -type f -print | argvs ls -lh | sort -k5,5 -rh | head -5`.
 ![Img 9](images/Task11_2.png)  
